@@ -1,0 +1,11 @@
+name,src_ip,dst_ip,src_port,dst_port,service,REVEALED_type
+Person_0000,192.168.1.30,192.168.1.190,34718,80,none,ddos
+Person_0003,192.168.1.31,192.168.1.195,53016,80,http,password
+Person_0004,192.168.1.31,52.59.177.21,38742,80,http,injection
+Person_0006,192.168.1.32,192.168.1.195,59468,80,http,xss
+Person_0009,192.168.1.30,192.168.1.195,62946,7100,none,scanning
+Person_0010,192.168.1.190,199.253.182.182,10306,53,dns,normal
+Person_0011,172.17.0.5,192.168.1.190,44642,53,dns,normal
+Person_0012,192.168.1.32,192.168.1.190,48262,80,http,xss
+Person_0013,192.168.1.30,192.168.1.184,47314,80,http,ddos
+Person_0014,2405:6e00:10ce:2c00:20c:29ff:feee:e07a,2001:7fe::53,28701,53,dns,normal

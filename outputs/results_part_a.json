@@ -1,0 +1,184 @@
+{
+  "raw_attack": {
+    "aux_size": 500,
+    "reidentified_unique_pct": 50.4,
+    "attribute_disclosed_pct": 98.6,
+    "attribute_disclosed_correct_pct": 98.6,
+    "median_candidates": 1.0
+  },
+  "k_anonymity": [
+    {
+      "k": 2,
+      "l": 1,
+      "levels": {
+        "src_ip": 0,
+        "dst_ip": 0,
+        "src_port": 1,
+        "dst_port": 0,
+        "service": 0
+      },
+      "records_kept": 203711,
+      "suppression_pct": 3.47,
+      "precision_loss": 0.0667,
+      "equivalence_classes": 11504,
+      "avg_class_size": 17.71,
+      "min_class_size": 2,
+      "min_l_diversity": 1,
+      "pct_records_in_homogeneous_classes": 83.63,
+      "attack": {
+        "aux_size": 500,
+        "reidentified_unique_pct": 0.0,
+        "attribute_disclosed_pct": 79.0,
+        "attribute_disclosed_correct_pct": 79.0,
+        "median_candidates": 192.0
+      }
+    },
+    {
+      "k": 5,
+      "l": 1,
+      "levels": {
+        "src_ip": 0,
+        "dst_ip": 0,
+        "src_port": 1,
+        "dst_port": 1,
+        "service": 0
+      },
+      "records_kept": 203863,
+      "suppression_pct": 3.4,
+      "precision_loss": 0.1333,
+      "equivalence_classes": 2470,
+      "avg_class_size": 82.54,
+      "min_class_size": 5,
+      "min_l_diversity": 1,
+      "pct_records_in_homogeneous_classes": 77.67,
+      "attack": {
+        "aux_size": 500,
+        "reidentified_unique_pct": 0.0,
+        "attribute_disclosed_pct": 73.0,
+        "attribute_disclosed_correct_pct": 73.0,
+        "median_candidates": 288.0
+      }
+    },
+    {
+      "k": 10,
+      "l": 1,
+      "levels": {
+        "src_ip": 1,
+        "dst_ip": 0,
+        "src_port": 1,
+        "dst_port": 1,
+        "service": 0
+      },
+      "records_kept": 203633,
+      "suppression_pct": 3.51,
+      "precision_loss": 0.1833,
+      "equivalence_classes": 1538,
+      "avg_class_size": 132.4,
+      "min_class_size": 10,
+      "min_l_diversity": 1,
+      "pct_records_in_homogeneous_classes": 65.32,
+      "attack": {
+        "aux_size": 500,
+        "reidentified_unique_pct": 0.0,
+        "attribute_disclosed_pct": 61.2,
+        "attribute_disclosed_correct_pct": 61.2,
+        "median_candidates": 518.0
+      }
+    },
+    {
+      "k": 10,
+      "l": 2,
+      "levels": {
+        "src_ip": 1,
+        "dst_ip": 4,
+        "src_port": 2,
+        "dst_port": 3,
+        "service": 0
+      },
+      "records_kept": 203301,
+      "suppression_pct": 3.67,
+      "precision_loss": 0.5833,
+      "equivalence_classes": 12,
+      "avg_class_size": 16941.75,
+      "min_class_size": 126,
+      "min_l_diversity": 2,
+      "pct_records_in_homogeneous_classes": 0.0,
+      "attack": {
+        "aux_size": 500,
+        "reidentified_unique_pct": 0.0,
+        "attribute_disclosed_pct": 0.0,
+        "attribute_disclosed_correct_pct": 0.0,
+        "median_candidates": 52973.0
+      }
+    },
+    {
+      "k": 10,
+      "l": 3,
+      "levels": {
+        "src_ip": 1,
+        "dst_ip": 4,
+        "src_port": 2,
+        "dst_port": 3,
+        "service": 0
+      },
+      "records_kept": 202757,
+      "suppression_pct": 3.93,
+      "precision_loss": 0.5833,
+      "equivalence_classes": 9,
+      "avg_class_size": 22528.56,
+      "min_class_size": 374,
+      "min_l_diversity": 5,
+      "pct_records_in_homogeneous_classes": 0.0,
+      "attack": {
+        "aux_size": 500,
+        "reidentified_unique_pct": 0.0,
+        "attribute_disclosed_pct": 0.0,
+        "attribute_disclosed_correct_pct": 0.0,
+        "median_candidates": 52973.0
+      }
+    }
+  ],
+  "clip_B": 3016.0,
+  "dp_groups": {
+    "none": {
+      "n": 132032,
+      "mean_unclipped": 379717.81347703584,
+      "mean_clipped": 23.26732155841008
+    },
+    "smb": {
+      "n": 126,
+      "mean_unclipped": 3604.285714285714,
+      "mean_clipped": 2585.1428571428573
+    },
+    "dce_rpc": {
+      "n": 136,
+      "mean_unclipped": 3.176470588235294,
+      "mean_clipped": 3.176470588235294
+    },
+    "dns": {
+      "n": 39446,
+      "mean_unclipped": 101.59537088678194,
+      "mean_clipped": 88.40934442022005
+    },
+    "ssl": {
+      "n": 1025,
+      "mean_unclipped": 4206504.832195122,
+      "mean_clipped": 1191.398048780488
+    },
+    "http": {
+      "n": 37029,
+      "mean_unclipped": 581.4266925922925,
+      "mean_clipped": 502.00637338302414
+    },
+    "ftp": {
+      "n": 1065,
+      "mean_unclipped": 85.14272300469483,
+      "mean_clipped": 85.14272300469483
+    },
+    "gssapi": {
+      "n": 184,
+      "mean_unclipped": 0.0,
+      "mean_clipped": 0.0
+    }
+  }
+}

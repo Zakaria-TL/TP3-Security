@@ -1,0 +1,97 @@
+{
+  "scenarios": [
+    {
+      "scenario": "1. valid credential, only 'over_18' disclosed",
+      "expected": "UNLOCKED",
+      "got": "UNLOCKED",
+      "reason": "ok",
+      "verifier_saw": [
+        "over_18"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "2. two attributes disclosed (still valid)",
+      "expected": "UNLOCKED",
+      "got": "UNLOCKED",
+      "reason": "ok",
+      "verifier_saw": [
+        "over_18",
+        "resident_of_city"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "3. policy attribute not disclosed",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "policy: over_18 not proven",
+      "verifier_saw": [
+        "resident_of_city"
+      ],
+      "pass": true
+    },
+    {
+      "scenario": "4. forged disclosure (not committed by issuer)",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "disclosure not committed by issuer",
+      "verifier_saw": [],
+      "pass": true
+    },
+    {
+      "scenario": "5. replay of a previously accepted presentation",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "bad or replayed nonce",
+      "verifier_saw": [],
+      "pass": true
+    },
+    {
+      "scenario": "6. stolen credential presented by another holder",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "holder key-binding signature invalid (not the credential owner)",
+      "verifier_saw": [],
+      "pass": true
+    },
+    {
+      "scenario": "7. credential from an untrusted issuer",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "untrusted issuer",
+      "verifier_saw": [],
+      "pass": true
+    },
+    {
+      "scenario": "8. expired credential",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "credential expired",
+      "verifier_saw": [],
+      "pass": true
+    },
+    {
+      "scenario": "9. tampered credential payload",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "bad issuer signature",
+      "verifier_saw": [],
+      "pass": true
+    },
+    {
+      "scenario": "10. credential revoked by issuer",
+      "expected": "DENIED",
+      "got": "DENIED",
+      "reason": "credential revoked",
+      "verifier_saw": [],
+      "pass": true
+    }
+  ],
+  "summary": {
+    "all_passed": true,
+    "issuer_contacts_total": 2,
+    "verifications": 10,
+    "note": "issuer is contacted only to refresh the revocation list, not per request"
+  }
+}
